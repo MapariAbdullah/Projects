@@ -1,0 +1,56 @@
+#include<stdio.h>
+#include<math.h>
+
+
+
+int main()
+{
+	float num1,num2,i=1;
+	char oper;
+	while(i>0)
+	{
+	
+	printf("\n\nEnter :");
+	scanf("%f%c%f",&num1,&oper,&num2);
+	switch(oper)
+	{
+		case '+':
+			{
+				printf("%0.2f",num1+num2);
+				break;
+			}
+		case '-':
+			{
+				printf("%0.2f",num1-num2);
+				break;
+			}
+		case '/':
+			{
+				printf("%0.2f",num1/num2);
+				break;
+			}
+		case '*':
+			{
+				printf("%0.2f",num1*num2);
+				break;
+			}
+		case '^':
+			{
+				printf("%0.2f",pow(num1,num2));
+				break;				
+			}
+		case '%':
+			{
+				printf("%0.2f",(num1*num2)/100);
+				break;
+			}
+		
+		default:
+			{
+				printf("Invalid operation");
+				break;
+			}
+	}
+}
+	return 0;
+}
